@@ -85,27 +85,41 @@ header {
 footer {
     border-style:solid;
     border-color: rgb(216, 21, 21);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "area-country area-country"
-        "area-links-right area-links-left";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #country {
-    grid-area: area-country;
-    align-self: center;
+    border-style:solid;
+    border-color: rgb(216, 21, 21);
+    flex-grow: 1;
+    align-self:flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#links-container {
+    flex-grow: 2;
+    border-style:solid;
+    border-color: rgb(216, 21, 21);
+    grid-area: area-links-container;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
 #links-right {
-    grid-area: area-links-right;
-    align-self: center;
+    border-style:solid;
+    border-color: rgb(21, 40, 216);
+    flex-grow: 3;
 }
 #links-left {
-    grid-area: area-links-left;
-    display:flex;
-    justify-content: flex-end;
-    align-self: center;
+    border-style:solid;
+    border-color: rgb(216, 21, 21);
+    flex-grow: 1;
 }
 .gray-link {
     color: gray;
+    align-self: center;
 }
