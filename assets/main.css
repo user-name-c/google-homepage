@@ -11,10 +11,12 @@ body {
     background-color: aqua;
     display: flex;
     flex-direction: column;
+    font-family: arial,sans-serif;
 }
 
 button {
     cursor: pointer;
+    border-color: transparent;
 }
 a {
     text-decoration: none;
@@ -23,12 +25,17 @@ a {
 a:hover {
     text-decoration: underline;
 }
+p {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #222;
+}
 /*content*/
 #body-container {
     height: 100%;
     width: 100%;
     background-color: azure;
-    display:grid;
+    display: grid;
 }
 /*header*/
 header {
@@ -51,7 +58,6 @@ header {
     padding: 9px 23px;
     background-color: #1a73e8;
     border-radius: 4px;
-    border-color: transparent;
 }
 .link-black {
     color: rgba(0,0,0,0.87);
@@ -62,15 +68,15 @@ header {
 
 #section-container {
     border-style:solid;
-    border-color: black;
+    border-color: rgb(17, 30, 218);
     display: grid;
-    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 2fr repeat(3, 1fr);
     grid-template-areas: 
-        ". image ." 
-        ". search ." 
-        ". butons ." 
-        ". pa .";
+        "image" 
+        "search" 
+        "butons" 
+        "pa";
 }
 #google-logo {
     grid-area: image;
@@ -79,12 +85,38 @@ header {
     border-style:solid;
     border-color: black;
 }
-#search-input{
+#search-bar{
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
     grid-area: search;
     align-self: center;
     justify-self: center;
-    border-style:solid;
-    border-color: black;
+    width: auto;
+    max-width: 584px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.svg-container {
+    border: 1px solid #dfe1e5;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.svg-icon {
+    height: 20px;
+    width: 20px;
+}
+.search-input {
+    margin: 0;
+    padding: 0;
+    height: 34px;
+    color: rgba(0,0,0,.87);
+    font-size: 16px;
 }
 #search-option-butons {
     grid-area: butons;
@@ -92,6 +124,23 @@ header {
     justify-self: center;
     border-style:solid;
     border-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.search-option {
+    background-color: #f8f9fa;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    height: 36px;
+    min-width:54px;
+    min-width: 54px;
+    margin: 11px 4px;
+    border-radius: 4px;
+}
+.search-option:hover {
+    box-shadow:0 1px #999;
+    border:1px solid #dfe1e5;
 }
 #by-google {
     grid-area: pa;
