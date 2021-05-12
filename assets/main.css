@@ -25,18 +25,30 @@ button {
 }
 /*header*/
 header {
+    height: 60px;
+    align-self: center;
     border-style:solid;
     border-color: rgb(29, 231, 113);
     display:flex;
     justify-content: flex-end;
-    align-self: center;
+    align-items: center;
+}
+.header-element {
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .start-sesion {
     color: white;
+    font-size: 14px;
+    letter-spacing: .25px;
+    padding: 9px 23px;
     background-color: #1a73e8;
+    border-radius: 4px;
+    border-color: transparent;
 }
 .link-black {
     color: black;
+    font-size: 12px;
 }
 
 /*section*/
