@@ -109,6 +109,12 @@ footer {
     align-items: center;
     flex-wrap: wrap;
 }
+.url-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 #links-right {
     border-style:solid;
     border-color: rgb(21, 40, 216);
@@ -122,4 +128,13 @@ footer {
 .gray-link {
     color: gray;
     align-self: center;
+}
+@media  (min-width: 1200px){
+    /*footer*/
+    #links-left {
+        justify-content: flex-end;
+    }
+    #links-right {
+        justify-content: flex-start;
+    }
 }
