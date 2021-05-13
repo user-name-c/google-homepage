@@ -151,58 +151,58 @@ header {
 
 /*footer*/
 footer {
-    border-style:solid;
-    border-color: rgb(216, 21, 21);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #70757a;
+}
+#country-container {
+    align-self:flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 15px;
+    border-bottom: 1px solid #dadce0;
 }
 #country {
-    border-style:solid;
-    border-color: rgb(216, 21, 21);
+    justify-self: center;
     flex-grow: 1;
-    align-self:flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: rgba(0,0,0,.54);
 }
 #links-container {
-    flex-grow: 2;
-    border-style:solid;
-    border-color: rgb(216, 21, 21);
-    grid-area: area-links-container;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
+    background: #f2f2f2;
 }
 .url-container {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-#links-right {
-    border-style:solid;
-    border-color: rgb(21, 40, 216);
+#links-left {
     flex-grow: 3;
 }
-#links-left {
-    border-style:solid;
-    border-color: rgb(216, 21, 21);
+#links-right {
     flex-grow: 1;
 }
 .gray-link {
-    color: gray;
+    color: #70757a;
+    padding: 15px;
     align-self: center;
 }
 @media  (min-width: 1200px){
     /*footer*/
-    #links-left {
+    #links-right {
         justify-content: flex-end;
     }
-    #links-right {
+    #links-left {
         justify-content: flex-start;
     }
 }
