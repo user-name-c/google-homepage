@@ -8,7 +8,7 @@ body {
     height: 100%;
     width: 100%;
     padding: 0;
-    background-color: aqua;
+    background-color: white;
     display: flex;
     flex-direction: column;
     font-family: arial,sans-serif;
@@ -34,15 +34,13 @@ p {
 #body-container {
     height: 100%;
     width: 100%;
-    background-color: azure;
+    background-color: white;
     display: grid;
 }
 /*header*/
 header {
-    border-style:solid;
-    border-color: rgb(17, 30, 218);
-    height: 60px;
     align-self: flex-start;
+    height: 60px;
     display:flex;
     justify-content: flex-end;
     align-items: center;
@@ -86,22 +84,13 @@ header {
 }
 
 /*section*/
-section {
-    border-style:solid;
-    border-color: rgb(138, 68, 66);
-    margin-top: 0px;
-}
 #section-container {
-    border-style:solid;
-    border-color: rgb(17, 30, 218);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 #google-logo {
     align-self: center;
-    border-style:solid;
-    border-color: black;
 }
 #search-bar{
     align-self: center;
@@ -112,7 +101,7 @@ section {
     min-width:400px;
     max-width: 584px;
     height: 44px;
-    margin-top: 6px;
+    margin: 14px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,7 +110,6 @@ section {
     box-shadow:0px 1px 2px 1px gray;
 }
 .svg-container {
-    border: 1px solid #dfe1e5;
     width: 50px;
     display: flex;
     flex-direction: row;
@@ -136,6 +124,8 @@ section {
     margin-right: 0;
 }
 .search-input {
+    background: transparent;
+    border: none;
     flex: 1;
     margin: 0;
     padding: 0;
@@ -143,11 +133,10 @@ section {
     min-width: 40px;
     color: rgba(0,0,0,.87);
     font-size: 16px;
+    outline: none;
 }
 #search-option-butons {
     align-self: center;
-    border-style:solid;
-    border-color: black;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -169,15 +158,11 @@ section {
 }
 #by-google {
     align-self: center;
-    border-style:solid;
-    border-color: black;
     margin-bottom: 50px;
 }
 
 /*footer*/
 footer {
-    border-style:solid;
-    border-color: rgb(17, 30, 218);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
